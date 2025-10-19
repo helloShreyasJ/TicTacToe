@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button x:Name="GridCreatorButton" Text="Create the Grid" Clicked="GridCreated" BackgroundColor="Black" FontSize="24" WidthRequest="300"/>
+
+            <Grid x:Name="GameGrid"
+                  Padding="2"
+                  BackgroundColor="Black"
+                  HorizontalOptions="Center"
+                  VerticalOptions="Center"
+                  HeightRequest="300"
+                  WidthRequest="300"
+            >
+            </Grid>
+
+            <Label x:Name="TurnTeller" FontSize="24" WidthRequest="300" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="EnterBoardSize" FontSize="24" WidthRequest="300" HorizontalTextAlignment="Center" Placeholder="Enter Size" PlaceholderColor="Black" Keyboard="Numeric"></Entry>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
